@@ -1,0 +1,868 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+scroll-behavior: smooth;
+}
+body {
+  max-width:100vw;
+  overflow-x: hidden;
+}
+header {
+  display:flex;
+  gap: 16em;
+  padding:2.5em 1em 1em 3em;
+  flex-wrap: wrap;
+  background-color: #111418;
+  color:white;
+  position: fixed;
+  width:100vw;
+  z-index: 999;
+  height: 7vh;
+  
+}
+header h1 {
+  font-size: 3em;
+}
+header div img {
+  padding-right: 0.6em;
+}
+header div img:last-child {
+  padding-left:1.5em;
+ transform: scale(2);
+}
+ ul {
+  background-color:black;
+  display: none;
+ width: 100vw;
+ position: fixed;
+ top:7vh;
+ z-index: 999;
+
+}
+ ul li {
+   font-size: 2.7vh;
+   padding:0.5em 1em ;
+   color:white;
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li:last-child {
+  border: none;
+}
+main .banner {
+  height: 100vh;
+  width: 100vw;
+background-image: url('img/background1.jpg');
+  background-size:cover;
+ background-repeat: no-repeat;
+ 
+}
+main .banner .screen {
+  height:100vh;
+  width:100vw;
+  background-color: rgb(0,0,0,0.8);
+display: flex;
+ justify-content: center;
+ align-items: center;
+}
+main .banner .screen div {
+  color:white;
+  transform:scale(2);
+}
+main .banner .screen div button {
+  padding: 1em 3em ;
+  margin-top:1em;
+  position: relative;
+  left:1em;
+  background-color: rgb(0,0,0,0);
+  border-radius:2em;
+  color:white;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/blacklite.ttf)
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(fonts/fonts.woff2)
+}
+main .about_me {
+  height: 50vh;
+  margin-top:5em;
+  padding-top:2em;
+  margin-bottom: 10em;
+}
+main .about_me h1 {
+  font-family: mySecondFont;
+  text-align: center;
+  color:#f2f4f4;
+  font-size: 10em;
+}
+main .about_me div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+position: relative;
+top:-14%;
+
+}
+main .about_me div:nth-of-type(1) h2  {
+  font-size:2.5em;
+ 
+}
+main .about_me div:nth-of-type(1) hr {
+  height: 0.2em;
+  width: 10vw;
+  background-color: black;
+border: 1px solid black;
+  border-radius:25%;
+ margin-bottom: 5em;
+}
+main .about_me div:nth-of-type(1) h3 {
+  font-size:2.2em;
+  margin-bottom: 2em;
+}
+main .about_me div:nth-of-type(1) h3 span {
+  text-transform:uppercase;
+}
+main .about_me div:nth-of-type(1) p {
+  max-width:80vw;
+  font-size: 1.2em;
+}
+main .about_me div:nth-of-type(1) p span {
+  font-size:3.5em;
+}
+main .about_me div:nth-of-type(2) {
+  padding-left:6.2vw;
+ position: relative;
+ top:-10%;
+}
+main .about_me div:nth-of-type(2) p {
+  margin-bottom:1em;
+  font-size: 1.2em;
+}
+main .about_me div:nth-of-type(2) p span {
+  text-transform:uppercase;
+  font-weight:bold;
+}
+main .about_me div:nth-of-type(2) button {
+  padding:1em 2em;
+  background-color: black;
+  color:white;
+  border-radius:4em;
+}
+main .services {
+  height: 50vh;
+  width: 100vw;
+  margin-bottom: 10em;
+  background-color: #f8f9fa;
+}
+main .services h1  {
+ font-family: mySecondFont;
+  text-align: center;
+  color:#eff0f2;
+  font-size: 10em;
+}
+main .services h3 {
+font-size:2.5em;
+position: relative;
+top:-14%;
+text-align: center;
+}
+main .services hr {
+position: relative;
+top:-14%;
+margin: auto;
+height: 0.2em;
+  width: 10vw;
+  background-color: black;
+border: 1px solid black;
+  border-radius:25%;
+ margin-bottom: 5em;
+}
+main .services div {
+  position: relative;
+  top:-18%;
+  left:7%;
+  display: flex;
+  flex-wrap: wrap;
+ max-width:85vw;
+ margin:auto;
+ 
+}
+main .services div p {
+  flex: 50%;
+  max-width:30vw ;
+  margin:0em 6em 1em 0em;
+}
+main .services div p img {
+position: relative;
+top:20%;
+left:-30%;
+padding: 1em;
+background-color: #fcfeff;
+ box-shadow:10px 10px 10px  2px #e9e9e9;
+  border-radius:1em;
+  max-height: 5em;
+  min-height:4.8em;
+}
+main .services div p span {
+  font-weight:bold;
+  display: block;
+  font-size: 1.5em;
+}
+main .summary {
+height: 50vh;
+  width: 100vw;
+  margin-bottom: 20em;
+}
+main .summary h1 {
+font-family: mySecondFont;
+  text-align: center;
+  color:#eff0f2;
+  font-size: 10em;
+}
+main .summary h3 {
+font-size:2.5em;
+position: relative;
+top:-14%;
+text-align: center;
+}
+main .summary hr {
+position: relative;
+top: -14%;
+margin: auto;
+height: 0.2em;
+  width: 10vw;
+  background-color: black;
+border: 1px solid black;
+  border-radius:25%;
+
+}
+main .summary button {
+padding:1em 2em;
+  border:1px solid  black;
+  color:black;
+  background-color: white;
+  border-radius:4em;
+  position: relative;
+  top:2%;
+  left: 40%;
+}
+main .summary .resume {
+  display:flex;
+  max-width:80vw;
+  margin:0 auto 4em;
+  gap:5em;
+}
+main .summary .resume .education h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+main .summary .resume .education .card {
+padding: 2em;
+height: 27vh;
+width:35vw;
+background-color: white;
+border:2px solid #f3f3f3; 
+border-radius:1em;
+box-shadow:10px 10px 10px  2px #e9e9e9;
+}
+main .summary .resume .education .card span {
+  display: inline-block;
+  padding:0.2em 0.6em;
+  background-color: black;
+  color:white;
+  border-radius:0.4em;
+  margin-bottom: 1em;
+}
+main .summary .resume .education .card h4 {
+  font-size: 1.5em;
+  margin-bottom:0.6em;
+}
+main .summary .resume .education .card h5 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+main .summary .resume .experience h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+main .summary .resume .experience .card {
+padding: 2em;
+height: 27vh;
+width:35vw;
+background-color: white;
+border:2px solid #f3f3f3; 
+border-radius:1em;
+box-shadow:10px 10px 10px  2px #e9e9e9;
+}
+main .summary .resume .experience .card span {
+  display: inline-block;
+  padding:0.2em 0.6em;
+  background-color: black;
+  color:white;
+  border-radius:0.4em;
+  margin-bottom: 1em;
+}
+main .summary .resume .experience .card h4 {
+  font-size: 1.5em;
+  margin-bottom:0.6em;
+}
+main .summary .resume .experience .card h5 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+main .summary .skills {
+  display:flex;
+  max-width:80vw;
+  margin:auto;
+  flex-wrap: wrap;
+ padding-left: 2em;
+}
+main .summary .skills h2 {
+  display:block;
+  width: 100%;
+  margin-bottom: 1em;
+ 
+}
+main .summary .skills .bar {
+  flex:50%;
+  margin-bottom: 2em;
+  
+}
+main .summary .skills .bar p span {
+ position: relative;
+ left:62%;
+}
+main .summary .skills .bar:nth-of-type(3) p span {
+ position:relative;
+ left:52%;
+}
+main .summary .skills .bar:nth-of-type(4) p span {
+ position: relative;
+ left:58%;
+}
+main .summary .skills .bar:nth-of-type(5) p span {
+ position: relative;
+ left:60%;
+}
+main .summary .skills .bar:nth-of-type(6) p span {
+ position: relative;
+ left:66%;
+}
+main .summary .skills .bar .skill-bar {
+  width: 30vw;
+  height: 0.5vh;
+  background-color:#f2f2f2;
+  border-radius: 1em;
+}
+main .summary .skills .bar .skill-bar .skill-progress1 {
+  height: 0.5vh;
+  background-color: black;
+  border-radius: 1em;
+  animation: skill-progress1 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+main .summary .skills .bar .skill-bar .skill-progress2 {
+  height: 0.5vh;
+  background-color: black;
+  border-radius: 1em;
+  animation: skill-progress2 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+@keyframes skill-progress1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes skill-progress2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+main .portfolio {
+height: 100vh;
+  width: 100vw;
+  margin-bottom: 100em;
+}
+main .portfolio h1 {
+font-family: mySecondFont;
+  text-align: center;
+  color:#eff0f2;
+  font-size: 10em;
+}
+main .portfolio h3 {
+font-size:2.5em;
+position: relative;
+top:-7%;
+text-align: center;
+}
+main .portfolio hr {
+position: relative;
+top: -7%;
+margin: auto;
+height: 0.2em;
+  width: 10vw;
+  background-color: black;
+border: 1px solid black;
+  border-radius:25%;
+
+}
+main .portfolio div {
+  display:flex;
+  max-width:80vw ;
+  flex-wrap: wrap;
+  margin: auto;
+  gap:1.5em;
+}
+main .portfolio div img {
+  flex:45%;
+  object-fit: contain;
+}
+main .contact {
+height: 50vh;
+  width: 100vw;
+  background-color: #f8f9fa;
+}
+main .contact h1 {
+font-family: mySecondFont;
+  text-align: center;
+  color:#eff0f2;
+  font-size: 10em;
+}
+main .contact h3 {
+font-size:2.5em;
+position: relative;
+top:-14%;
+text-align: center;
+}
+main .contact hr {
+position: relative;
+top: -14%;
+margin: auto;
+height: 0.2em;
+  width: 10vw;
+  background-color: black;
+border: 1px solid black;
+  border-radius:25%;
+
+}
+main .contact .touch {
+  display:flex;
+  max-width:80vw;
+  margin:auto;
+}
+main .contact .touch .address {
+  flex:35%;
+  max-width:35vw;
+}
+main .contact .touch .address h2 {
+  font-size: 1.3em;
+  font-weight:400;
+  margin-bottom:2em;
+}
+main .contact .touch .address p:nth-of-type(1) {
+ margin-bottom:2em;
+}
+main .contact .touch .address p img {
+  position:relative;
+  top:0.8vw;
+  margin-right:0.4em;
+}
+main .contact .touch .address h4 {
+  font-size:1.3em;
+  font-weight:400;
+  margin-top:2em;
+}
+main .contact .touch .address .follow {
+  display:flex;
+ 
+}
+main .contact .touch .address .follow img {
+  padding: 1em 1em 0em 0em;
+ 
+}
+main .contact .touch .send form{
+min-width:55vw;
+  border-radius:0.4em;
+  padding: 5em;
+  background-color: white;
+  max-width: 55vw;
+  position: relative;
+  top:-2.5vh;
+  background-color: #f8f9fa;
+}
+main .contact .touch .send form legend {
+font-size: 1.3em;
+  font-weight:400;
+  margin-top:-1.7em;
+  margin-bottom: 2em;
+}
+main .contact .touch .send form input {
+display: block;
+height: 2vh;
+  width: 42vw;
+  margin:0em 1em 0em 0em;
+  border-radius:0.4em;
+  margin-bottom: 1em;
+  background-color: white;
+  border:1px solid white;
+  margin-bottom: 2em;
+}
+main .contact .touch .send form ::-webkit-input-placeholder {
+padding: 0 0.5em;
+  font-size: 1.5em;
+}
+main .contact .touch .send form textarea{
+  height: 8vh;
+  min-width: 42vw;
+  border-radius:0.4em;
+  background-color: white;
+  border:1px solid white;
+}
+main .contact .touch .send form button {
+font-size: 1.2em;
+padding: 1em 2em;
+  border-radius:0.7em;
+  position: relative;
+  top:1.5vh;
+  left:5vw;
+  color:white;
+  background-color: black;
+  border:1px solid black;
+}
+footer {
+  font-size: 1.5em;
+  max-width: 100vw;
+text-align: center;
+padding: 4em 0em;
+}
+footer span {
+  color:#21c998;
+}
+@media screen and (max-width: 420px) {
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+ header {
+  padding:0.4em 0.4em 0.4em 1.2em;
+    gap:3.8em;
+    
+  }
+ header h1 {
+    padding-top:0.4em;
+font-size: 1.1em;
+  }
+header div img {
+  padding-right: 0em;
+}
+header div img:last-child {
+  padding-left:0em;
+ transform: scale(1);
+}
+main .banner .screen div {
+  transform:scale(1);
+}
+main .about_me {
+  height: 160vh;
+  margin-top:2em;
+  padding-top:2em;
+  margin-bottom: 2em;
+}
+main .about_me h1 {
+  font-size: 4em;
+}
+main .about_me div:nth-of-type(1) {
+ position: relative;
+ top:-6%;
+}
+main .about_me div:nth-of-type(1) h2  {
+  font-size:2em;
+  
+}
+main .about_me div:nth-of-type(1) hr {
+  margin-bottom: 2em;
+}
+main .about_me div:nth-of-type(1) h3 {
+  font-size:1.7em;
+  margin-bottom: 0.5em;
+  max-width:80vw;
+  text-align: center;
+}
+main .about_me div:nth-of-type(1) h3 span {
+  text-transform:uppercase;
+}
+main .about_me div:nth-of-type(1) p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+main .about_me div:nth-of-type(1) p span {
+  font-size:2em;
+}
+main .about_me div:nth-of-type(2) {
+  padding-left:6.2vw;
+ position: relative;
+ top:-6%;
+}
+main .about_me div:nth-of-type(2) p {
+  font-size: 0.8em;
+}
+main .services {
+  height:300vh;
+  width: 100vw;
+  padding-bottom: 4em;
+  background-color: #f8f9fa;
+}
+main .services h1  {
+ font-family: mySecondFont;
+  text-align: center;
+  color:#eff0f2;
+  font-size: 4em;
+}
+main .services  h3 {
+  position: relative;
+  top:-3.3%;
+font-size:2em;
+text-align: center;
+}
+main .services hr {
+  top:-3.5%;
+ margin-bottom: 5em;
+}
+main .services div {
+  left:0%;
+  top:-8%;
+ max-width:100vw;
+ margin:auto;
+}
+main .services div p {
+ flex:100%;
+ min-width: 70vw;
+  position: relative;
+  left:20vw;
+}
+main .services div p img {
+position: relative;
+top:20%;
+left:-27%;
+  max-height: 4em;
+  min-height:3.8em;
+}
+main .summary {
+height: 300vh;
+  margin-bottom: 0vh;
+}
+main .summary h1 {
+  font-size: 4em;
+}
+main .summary h3 {
+font-size:2em;
+top:-2.8%;
+}
+main .summary hr {
+position: relative;
+top: -3.1%;
+}
+main .summary button {
+  left: 30%;
+}
+main .summary .resume {
+  display:flex;
+  max-width:90vw;
+  margin:0 auto 0em;
+  gap:0em;
+  row-gap: 10vh;
+  flex-wrap: wrap;
+}
+main .summary .resume .education .card {
+height: 90vh;
+min-width:85vw;
+}
+main .summary .resume .experience .card {
+height: 90vh;
+width:85vw;
+margin-bottom: 3vh;
+}
+main .summary .skills {
+  display:flex;
+  max-width:90vw;
+  margin:auto;
+  flex-wrap: wrap;
+ padding-left: 2em;
+}
+main .summary .skills h2 {
+  display:block;
+  width: 100%;
+  margin-bottom: 1em;
+ 
+}
+main .summary .skills .bar {
+  flex:100%;
+  margin-bottom: 2vh;
+  
+}
+main .summary .skills .bar:nth-of-type(1) p span {
+ left:76%;
+}
+main .summary .skills .bar:nth-of-type(2) p span {
+ left:78%;
+}
+main .summary .skills .bar:nth-of-type(3) p span {
+ left:62%;
+}
+main .summary .skills .bar:nth-of-type(4) p span {
+ left:72%;
+}
+main .summary .skills .bar:nth-of-type(5) p span {
+ left:74%;
+}
+main .summary .skills .bar:nth-of-type(6) p span {
+ left:82%;
+}
+
+main .summary .skills .bar .skill-bar {
+  width: 80vw;
+  height: 1.5vh;
+}
+main .summary .skills .bar .skill-bar .skill-progress1 {
+  height: 1.5vh;
+}
+main .summary .skills .bar .skill-bar .skill-progress2 {
+  height: 1.5vh;
+}
+main .portfolio {
+height: 640vh;
+  width: 100vw;
+  margin-bottom:15vh;
+}
+main .portfolio h1 {
+  font-size: 3.8em;
+}
+main .portfolio h3 {
+font-size:2em;
+top:-1.4%;
+}
+main .portfolio hr {
+top: -1.5%;
+}
+main .portfolio div {
+  max-width:90vw ;
+  gap:0em;
+  row-gap: 5vh;
+}
+main .portfolio div img {
+  flex:100%;
+  min-width: 80vw;
+  max-width:90vw;
+}
+main .contact {
+height: 170vh;
+  max-width: 100vw;
+}
+main .contact h1 {
+  font-size: 4em;
+}
+main .contact h3 {
+font-size:2em;
+top:-6%;
+}
+main .contact hr {
+top: -6.5%;
+}
+main .contact .touch {
+  max-width:90vw;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+main .contact .touch .address {
+  flex:100%;
+  max-width:90vw;
+  position: relative;
+  top:10vh;
+}
+main .contact .touch .address h2 {
+  font-size: 1.3em;
+  font-weight:400;
+  text-align: center;
+  margin-bottom:4vh;
+}
+main .contact .touch .address p:nth-of-type(1) {
+ text-align: center;
+ margin-bottom:4vh;
+}
+main .contact .touch .address p {
+  text-align: center;
+}
+main .contact .touch .address p img {
+  position:relative;
+  top:1vh;
+  margin-right:0.4vw;
+}
+main .contact .touch .address h4 {
+  font-size:1.3em;
+  font-weight:400;
+  margin-top:2vh;
+  text-align: center;
+  margin-bottom:4vh;
+}
+main .contact .touch .address .follow  {
+  max-width: 50vw;
+  position: relative;
+  left:22vw;
+}
+
+main .contact .touch .send form{
+min-width:90vw;
+  max-width: 90vw;
+  top:0vh;
+  padding: 2em;
+}
+main .contact .touch .send form legend {
+font-size: 1.2em;
+  font-weight:400;
+  margin-top:0vh;
+  position: relative;
+  top:-7vh;
+  left:14vw;
+  margin-bottom:3vh;
+  text-transform:uppercase ;
+}
+main .contact .touch .send form input {
+display: block;
+height: 10vh;
+  width: 82vw;
+  margin:0em 1em 0em 0em;
+  border-radius:0.4em;
+  margin-bottom: 1em;
+  background-color: white;
+  border:1px solid white;
+  margin-bottom: 2em;
+}
+main .contact .touch .send form ::-webkit-input-placeholder {
+padding: 0 0.5em;
+  font-size: 1.2em;
+}
+main .contact .touch .send form textarea{
+  height: 30vh;
+  min-width: 82vw;
+}
+main .contact .touch .send form button {
+  top:3.5vh;
+}
+footer {
+  font-size: 1.2em;
+padding: 2em 0em;
+}

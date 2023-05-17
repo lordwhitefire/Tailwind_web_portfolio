@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background {
+  @apply bg-[url('img/background1.jpg')] bg-cover bg-no-repeat 
+}
+.MyCustomFont {
+  font-family: MyCustomFont;
+}
+.FontSpartan {
+  font-family: FontSpartan;
+}
+@font-face {
+  font-family:'MyCustomFont';
+  src: url('fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+  font-family:'FontSpartan';
+  src: url('fonts/LeagueSpartan-Regular.ttf');
+}
+.Customblock {
+  @apply block w-[80vw]
+}
